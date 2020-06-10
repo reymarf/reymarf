@@ -1,0 +1,329 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+$font-poppins: 'Poppins', sans-serif!important;
+$font-rubik: 'Rubik', sans-serif!important;
+body {
+  font-family: 'Poppins'!important;
+  
+}
+//Dark Mode Styling
+.dark-vertion.black-bg {
+    background-color: #100e17;
+}
+.dark-vertion {
+    opacity: 0.9;
+}
+.dodgerblue {
+    color: dodgerblue;
+}
+.bg-white {
+    background-color: white;
+}
+.white {
+    color: #ddd;
+} 
+
+
+//home background image
+#home {
+    background-image: url(/assets/img/header-bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.banner {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.flex-wrapper {
+    margin-top: 200px!important;
+    color: #ddd;
+    ///
+    .title h1 {
+        padding-bottom: 2rem;
+        font-size: 3rem;
+        span {
+            color: dodgerblue;
+        }
+    }
+    .intro h2{
+        font-size: 1.5rem;
+    }
+    .specialized h1 {
+        font-size: 1.5rem;
+    } 
+    a {        
+        text-decoration: none;
+        font-size: 1.5rem;
+        &:hover {
+            cursor: none;
+            color: dodgerblue;
+            text-decoration: none;
+            
+        }
+    }
+}
+//Services
+.heading h6 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.heading h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.service-item {
+    text-align: center;
+    margin-bottom: 100px;
+    .icon {
+        color: #222;
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 80px;
+        height: 80px;
+        line-height: 78px;
+        font-size: 30px;
+        border: 1px solid #e3e3e3;
+        border-radius: 50%;
+        transition: .5s all ease;
+        .fa-laptop::before {
+            content: "\f109";
+        
+        }
+        .fa-gears::before {
+            content: "\f085";
+          
+        }
+        .fa-mobile::before {
+            content: "\f10b";
+           
+        }
+        .fa-rocket::before {
+            content: "\f135";
+            
+        }
+        .fa-pencil::before {
+            content: "\f040";
+           
+        }
+        .fa-support::before {
+            content: "\f1cd";
+           
+        }
+        &:hover {
+            color: #ddd;
+            background-color: #333;
+            transition: .3s ease;
+        }
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+}
+.bg-gray {
+    background-color: #f2f2f2;
+    color: #000;
+}
+
+//works
+.card-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-one {background-image: url('/assets/img/portfolio/huddle.jpg');}
+.bg-two {background-image: url('/assets/img/portfolio/fyro.jpg');}
+.bg-three {background-image: url('/assets/img/portfolio/ping.jpg');}
+.bg-four {background-image: url('/assets/img/portfolio/cards.jpg');}
+.bg-five {background-image: url('/assets/img/portfolio/social.jpg');}
+.bg-six {background-image: url('/assets/img/portfolio/pricing.jpg');}
+
+
+
+#logo {height: 80px; margin-left: 20px;}
+
+
+.right {float: right !important;}
+/* Image zoom on hover + Overlay colour */
+
+.parent {
+    width: 280px;
+    margin: 20px;
+    height: 220px;
+    box-shadow: 0px 0px 5px 0px #ddd;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+   
+}
+
+.child {
+    
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    max-height: 300px;
+    max-width: 300px;
+    border-top: 3px solid dodgerblue;
+}
+
+
+.parent:hover .child, .parent:focus .child {
+    transform: scale(1.1);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover .img-subtitle, .parent:focus .img-subtitle {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.img-subtitle {
+    display: none;
+    font-size: 25px;
+    font-family: $font-poppins;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    
+    &:hover {
+        text-decoration: none;
+    }
+}
+//about
+.hero-img {
+    width: 350px;
+    max-height: 400px;
+    vertical-align: center;
+    
+}
+
+section.about .about-content 
+.about-button {
+    margin-top: 100px;
+    
+    //background-color: white;
+    }
+.social-icons {
+    
+     a {
+      display: inline-block;
+      font-size: 15px;
+      line-height: 26px;
+      text-align: center;
+      margin-right: 10px;
+      background-color: #222;
+      border-radius: 50%;
+      border: 2px solid #222;
+      width: 30px;
+      height: 30px;
+      transition: .2s all ease; 
+      &:hover {
+        border: 2px solid #222;
+        background: transparent;
+        line-height: 26px; }
+      }
+        .fa {
+            color: #ddd;
+            transition: .2s all ease; 
+        }
+        a:hover .fa {
+            color: #222; 
+        }
+}
+/* PAGE SECTION IN EVERY PAGE */
+.page-section {
+    padding: 6rem 0;
+    display: block;
+    height: 100%;
+    
+}
+//about
+.hero-img {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('/myPortfolio/assets/img/header-bg.jpg');
+
+}
+.image-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center center;
+   
+}
+.img-overlay {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('/myPortfolio/assets/img/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center center;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+.img-color-overlay {
+    background-color: rgba(0,0,0, 0.17);
+    position: relative;
+}
+.my-image {
+    height: 400px;
+    width: 400px;
+    border: 10px solid rgba(0,0,0, 0.17); 
+}
+
+.main-btn {
+    
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    text-decoration: none;
+    border: 1px solid white;
+    &:hover {
+    background-color: white;
+    color: #333;
+    transition: 0.3s;
+    border: 1px solid #333;
+    text-decoration: none;
+    }
+}
+//footer
+.footer-wrapper {
+    padding-top: 6rem
+}
