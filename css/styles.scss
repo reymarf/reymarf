@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 $font-poppins: 'Poppins', sans-serif!important;
 $font-rubik: 'Rubik', sans-serif!important;
+
 body {
   font-family: 'Poppins'!important;
   font-size: 14px!important;
@@ -33,7 +34,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-position:center;
-    width: 100vw;
+    width: 100%;
     
 }
 .banner {
@@ -236,6 +237,11 @@ body {
 .carousel-wrapper {
     margin: 100px 0;
 }
+//Control carousel
+.carousel-nav {
+    font-size: 4rem;
+    color: #333;
+}
 
 .img-slide {
     max-width: 450px;
@@ -256,8 +262,19 @@ body {
     border: 1px solid #333;
     text-decoration: none;
     }
-    
 }
+.view-works {
+    color: dodgerblue;
+    cursor: pointer;
+    &:hover {
+        color: skyblue;
+    }
+    vertical-align: middle;
+    span {
+        font-size: 1.5rem;
+        color: red;
+    }
+} 
 //about
 .hero-img {
     width: 350px;
@@ -268,8 +285,6 @@ body {
 section.about .about-content 
 .about-button {
     margin-top: 100px;
-    
-    //background-color: white;
     }
 .social-icons {
     
@@ -372,7 +387,7 @@ section.about .about-content
         display: inline-block;
 
         .fab{ 
-        background: #5d5d5d;
+        background: #ddd;
         color: #262626;
         width: 50px;
         height: 50px;
@@ -426,10 +441,3 @@ section.about .about-content
     padding-top: 6rem
 }
 
-@media (max-width: 576px) {
-    body {
-        background-color: #ddd;
-    }
-
-
-}
