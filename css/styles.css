@@ -312,6 +312,12 @@ body {
   vertical-align: center;
 }
 
+.hero-img:hover {
+  opacity: .9;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
 section.about .about-content
 .about-button {
   margin-top: 100px;
