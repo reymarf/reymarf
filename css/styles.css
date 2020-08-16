@@ -314,8 +314,8 @@ body {
 
 .hero-img:hover {
   opacity: .9;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 section.about .about-content

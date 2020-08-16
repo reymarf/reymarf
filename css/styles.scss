@@ -282,7 +282,8 @@ body {
     vertical-align: center;
     &:hover {
         opacity: .9;
-        transition: .4s
+        transition: all .4s;
+
     }
 }
 
